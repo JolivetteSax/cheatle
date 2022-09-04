@@ -1,5 +1,5 @@
 # cheatle
-Cheating at wordle
+Cheating at wordle with python, inspired by https://github.com/regexer/wordler
 
 Takes 3 URL params, opt out with the *
 A-la: `@get('/<known>/<missplaced>/<missing>')`
@@ -53,3 +53,7 @@ $ curl localhost:8000/LA___/E_R__/G
 $ curl localhost:8000/LAY__/__R_E/G
 {"known": "LAY__", "missplaced": "__R_E", "missing": "G", "results": ["LAYER"]}
 ```
+
+## TODO:
+Algorithmic efficiency? 
+Accented chars?
