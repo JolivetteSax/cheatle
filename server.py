@@ -67,7 +67,8 @@ def handler(known = '*', missplaced = '*', missing = '*'):
     if len(required) > 0:
       elim = []
       for word in results:
-        if re.search(f'[{required}]', word):
+        matches = set(re.findall(f'[{required}]', word))
+        if len(matches) == len(required):
           elim.append(word)
 
       results = elim;
